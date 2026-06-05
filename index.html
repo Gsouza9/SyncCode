@@ -1,185 +1,366 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SyncCode</title>
 
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SyncCode</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-<!-- INTRO -->
 
-<div class="intro">
+    <!-- INTRO -->
 
-    <div class="intro-content">
+    <div class="intro">
 
-        <img src="img/logo.png" alt="SyncCode Logo" class="intro-image">
+        <div class="intro-content">
 
-        <p class="loading-text">
-            CARREGANDO
-        </p>
+            <img src="img/logo.png" alt="SyncCode Logo" class="intro-image">
 
-    </div>
-
-</div>
-
-  <header>
-    <div class="logo">
-
-    <span class="logo-sync">SYNC</span>
-    <span class="logo-code">CODE</span>
-
-</div>
-
-    <nav>
-      <a href="#">Início</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-
-    <div class="hero-content">
-      <h1>
-        Transformando ideias em
-        <span>software</span>
-      </h1>
-
-      <p>
-        Desenvolvimento web, sistemas modernos e soluções digitais para empresas.
-      </p>
-
-      <div class="buttons">
-
-  <a href="#" class="btn">
-    Começar Projeto
-  </a>
-
-  <a 
-    href="https://gsouza9.github.io/LandingPage-AUTOLOC/" 
-    target="_blank"
-    class="btn btn-secondary"
-  >
-    Ver Projeto Cliente
-  </a>
-
-</div>
-    </div>
-
-  </section>
-
-  <section class="sobre" id="sobre">
-
-    <h2 class="title">Sobre Nós</h2>
-
-    <p>
-      A SyncCode é uma empresa focada em desenvolvimento de software,
-      criação de sistemas web e soluções tecnológicas modernas.
-      Nosso objetivo é transformar ideias em plataformas rápidas,
-      bonitas e eficientes.
-    </p>
-
-  </section>
-
-  <section id="servicos">
-
-    <h2 class="title">Serviços</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Desenvolvimento Web</h3>
-
-        <p>
-          Sites modernos, rápidos e responsivos para empresas e startups.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Sistemas Personalizados</h3>
-
-        <p>
-          Desenvolvimento de plataformas e sistemas sob medida.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>UI/UX Design</h3>
-
-        <p>
-          Interfaces modernas focadas em experiência do usuário.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section id="contato" class="contato-section">
-
-    <h2 class="title">Entre em Contato</h2>
-
-    <div class="contato-container">
-
-        <!-- INFORMAÇÕES -->
-
-        <div class="contato-info">
-
-            <h3>Vamos criar algo incrível juntos.</h3>
-
-            <p>
-                Entre em contato com a SyncCode para desenvolver
-                sistemas modernos, sites profissionais e soluções digitais.
+            <p class="loading-text">
+                CARREGANDO
             </p>
 
-            <div class="info-item">
-                <span>📧</span>
-                <p>synccode@gmail.com</p>
-            </div>
+        </div>
 
-            <div class="info-item">
-                <span>📱</span>
-                <p>(11) 97998-6400</p>
-            </div>
+    </div>
 
-            <div class="info-item">
-                <span>📍</span>
-                <p>São Paulo - SP</p>
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+
+            <span class="logo-sync">
+                SYNC
+            </span>
+
+            <span class="logo-code">
+                CODE
+            </span>
+
+        </div>
+
+        <!-- MENU HAMBURGUER -->
+
+        <div class="menu-toggle" id="menu-toggle">
+
+            ☰
+
+        </div>
+
+        <!-- NAV -->
+
+        <nav id="nav">
+
+            <a href="#">
+                Início
+            </a>
+
+            <a href="#sobre">
+                Sobre
+            </a>
+
+            <a href="#servicos">
+                Serviços
+            </a>
+
+            <a href="#clientes">
+                Clientes
+            </a>
+
+            <a href="#contato">
+                Contato
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+
+                Transformando ideias em
+
+                <span>
+                    software
+                </span>
+
+            </h1>
+
+            <p>
+                Desenvolvimento web, sistemas modernos e soluções digitais para empresas.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#contato" class="btn btn-secondary">
+                    Entre em contato
+                </a>
+
             </div>
 
         </div>
 
-        <!-- FORMULÁRIO -->
+    </section>
 
-        <form class="contato-form">
+    <!-- SOBRE -->
 
-            <input type="text" placeholder="Seu nome" required>
+    <section class="sobre" id="sobre">
 
-            <input type="email" placeholder="Seu email" required>
+        <h2 class="title">
+            Sobre Nós
+        </h2>
 
-            <input type="text" placeholder="Assunto">
+        <p>
 
-            <textarea 
-                placeholder="Digite sua mensagem..."
-                rows="6"
-                required
-            ></textarea>
+            A SyncCode é uma empresa focada em desenvolvimento de software,
+            criação de sistemas web e soluções tecnológicas modernas.
 
-            <button type="submit" class="btn">
-                Enviar Mensagem
-            </button>
+            Nosso objetivo é transformar ideias em plataformas rápidas,
+            bonitas e eficientes.
 
-        </form>
+        </p>
 
-    </div>
+    </section>
 
-</section>
-  <footer>
-    © 2026 SyncCode - Todos os direitos reservados
-  </footer>
+    <!-- SERVIÇOS -->
+
+    <section id="servicos">
+
+        <h2 class="title">
+            Serviços
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>
+                    Desenvolvimento Web
+                </h3>
+
+                <p>
+                    Sites modernos, rápidos e responsivos para empresas e startups.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    Sistemas Personalizados
+                </h3>
+
+                <p>
+                    Desenvolvimento de plataformas e sistemas sob medida.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>
+                    UI/UX Design
+                </h3>
+
+                <p>
+                    Interfaces modernas focadas em experiência do usuário.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CLIENTES -->
+
+    <section id="clientes">
+
+        <h2 class="title">
+            Clientes
+        </h2>
+
+        <div class="cards">
+
+            <!-- AUTOLOC -->
+
+            <div class="card">
+
+                <h3>
+                    AUTOLOC
+                </h3>
+
+                <p>
+
+                    Sistema desenvolvido para a AUTOLOC com foco em
+                    geolocalização, venda de veículos e serviços automotivos.
+
+                </p>
+
+                <div class="cliente-buttons">
+
+                    <a href="https://gsouza9.github.io/LandingPage-AUTOLOC/" target="_blank" class="btn btn-secondary">
+                        Conheça a AutoLoc
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- THE CLOSET -->
+
+            <div class="card">
+
+                <h3>
+                    The Closet 50
+                </h3>
+
+                <p>
+
+                    Site desenvolvido para a loja de roupas
+                    The Closet 50 como forma de divulgação.
+
+                </p>
+
+                <div class="cliente-buttons">
+
+                    <a href="https://gsouza9.github.io/thecloset50/" target="_blank" class="btn btn-secondary">
+                        Conheça a The Closet 50
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+
+    <section id="contato" class="contato-section">
+
+        <h2 class="title">
+            Entre em Contato
+        </h2>
+
+        <div class="contato-container">
+
+            <div class="contato-info">
+
+                <h3>
+                    Vamos criar algo incrível juntos.
+                </h3>
+
+                <p>
+
+                    Entre em contato com a SyncCode para desenvolver
+                    sistemas modernos, sites profissionais e soluções digitais.
+
+                </p>
+
+                <div class="info-item">
+
+                    <span>📧</span>
+
+                    <p>
+                        synccode@gmail.com
+                    </p>
+
+                </div>
+
+                <div class="info-item">
+
+                    <span>📱</span>
+
+                    <p>
+                        (11) 97998-6400
+                    </p>
+
+                </div>
+
+                <div class="info-item">
+
+                    <span>📍</span>
+
+                    <p>
+                        São Paulo - SP
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- FORM -->
+
+            <form class="contato-form">
+
+                <input type="text" placeholder="Seu nome" required>
+
+                <input type="email" placeholder="Seu email" required>
+
+                <input type="text" placeholder="Assunto">
+
+                <textarea placeholder="Digite sua mensagem..." rows="6" required></textarea>
+
+                <button type="submit" class="btn">
+                    Enviar Mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 SyncCode - Todos os direitos reservados
+
+    </footer>
+
+    <!-- JAVASCRIPT MENU -->
+
+    <script>
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const nav = document.getElementById("nav");
+
+        menuToggle.addEventListener("click", () => {
+
+            nav.classList.toggle("active");
+
+        });
+
+        /* FECHAR MENU AO CLICAR */
+
+        document.querySelectorAll("nav a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                nav.classList.remove("active");
+
+            });
+
+        });
+
+    </script>
 
 </body>
+
 </html>
